@@ -7,24 +7,13 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-/*
- * Class:     com_example_ijnikkkk_encryptUtils
- * Method:    add
- * Signature: (II)I
- */
-JNIEXPORT jint
 
+JNIEXPORT jint
 JNICALL Java_com_example_ijnikkkk_encryptUtils_add(JNIEnv *env, jclass obj, jint v1, jint v2) {
     return v1 + v2;
 };
 
-/*
- * Class:     com_example_ijnikkkk_encryptUtils
- * Method:    sign
- * Signature: (Ljava/lang/String;)Ljava/lang/String;
- */
 JNIEXPORT jstring
-
 JNICALL Java_com_example_ijnikkkk_encryptUtils_sign(JNIEnv *env, jclass obj, jstring origin) {
     char data[] = "nico";
     return (*env)->NewStringUTF(env, data);
