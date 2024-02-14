@@ -9,7 +9,6 @@ import com.example.ijnikkkk.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Used to load the 'ijnikkkk' library on application startup.
     static {
         System.loadLibrary("ijnikkkk");
     }
