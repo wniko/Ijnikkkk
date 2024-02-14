@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         TextView tv = binding.sampleText;
 
-        String res = String.valueOf(EncryptUtils.add(1, 2));
+        // String res = String.valueOf(EncryptUtils.add(1, 2));
 
-        tv.setText(res);
+        tv.setText("res");
     }
 
     /**
