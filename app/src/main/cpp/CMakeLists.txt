@@ -34,10 +34,15 @@ add_library(
         SHARED
         encrypt.c)
 
+add_library(
+        dynamic
+        SHARED
+        dynamic.c)
+
 # Specifies libraries CMake should link to your target library. You
 # can link libraries from various origins, such as libraries defined in this
 # build script, prebuilt third-party libraries, or Android system libraries.
 target_link_libraries(
-        ${CMAKE_PROJECT_NAME} encrypt
+        ${CMAKE_PROJECT_NAME} encrypt dynamic
         android
         log)

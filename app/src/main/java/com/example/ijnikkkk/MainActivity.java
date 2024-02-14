@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         TextView tv = binding.sampleText;
-         String res = String.valueOf(EncryptUtils.add(1, 2));
+         String res = String.valueOf(DynamicUtils.add(1, 2));
         tv.setText(res);
     }
 
