@@ -25,9 +25,5 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(res);
     }
 
-    /**
-     * A native method that is implemented by the 'ijnikkkk' native library,
-     * which is packaged with this application.
-     */
     public native String stringFromJNI();
 }
