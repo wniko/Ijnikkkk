@@ -29,10 +29,15 @@ add_library(
         SHARED
         native-lib.cpp)
 
+add_library(
+        encrypt
+        SHARED
+        encrypt.c)
+
 # Specifies libraries CMake should link to your target library. You
 # can link libraries from various origins, such as libraries defined in this
 # build script, prebuilt third-party libraries, or Android system libraries.
 target_link_libraries(
-        ${CMAKE_PROJECT_NAME}
+        ${CMAKE_PROJECT_NAME} encrypt
         android
         log)

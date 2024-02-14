@@ -1,6 +1,6 @@
 package com.example.ijnikkkk;
 
-public class EncryptUtils {
+public class encryptUtils {
 
     static {
         System.loadLibrary("encrypt");
